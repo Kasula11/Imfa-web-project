@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher:700i|Oleo+Script|Raleway|Vidaloka">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>user data</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+.demo-2{
+	padding-top:4%;
+}
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  
+
+}
+table {
+
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1000px) {
+  table {
+    border: 0;
+	margin-top:100px;
+  }
+  table caption {
+  margin-top:50px;
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+body {
+    width: 100%;
+    min-height: 1000px;
+
+    margin: 3em auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7cac9+0,92a8d1+100 */
+    background: rgb(247, 202, 201);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+
+// Start | for demo
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+	<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button w3-wide">IMFA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="user.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>HOME</a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>PROFILE</a>
+      <a href="logout.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>LOG OUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#sol" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#techno" onclick="w3_close()" class="w3-bar-item w3-button">PROFILE</a>
+  <a href="logout.html" onclick="w3_close()" class="w3-bar-item w3-button">LOG OUT</a>
+</nav>
+
+
+
+
+<h1 style="margin-left:500px; margin-top:75px;">PROFIT AND LOSS</h1>
+
+<table style="margin-top:100px;">
+  <caption>Income</caption>
+  <thead>
+    <tr>
+      <th scope="col">Ord.Interest</th>
+      <th scope="col">Spl.Interest</th>
+      <th scope="col">Application fees</th>
+      <th scope="col">Fines</th>
+	  <th scope="col">New Members entry</th>
+	  <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+ <td>hello</td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="margin-top:100px;">
+  <caption>Expenditure</caption>
+  <thead>
+    <tr>
+      <th scope="col">Stationary</th>
+      <th scope="col">Withdrawls</th>
+      <th scope="col">Annual Meet</th>
+      <th scope="col">Tre Hanorium</th>
+	  <th scope="col">Total Expenditure</th>
+	  <th scope="col">Net Profit</th>
+	  <th scope="col">Total</th>
+	  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+ 
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

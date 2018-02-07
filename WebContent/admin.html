@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>IMFA</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link href="css/custom1.css" rel="stylesheet">
+
+   
+  
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher:700i|Oleo+Script|Raleway|Vidaloka">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" href="fevi.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher:700i|Oleo+Script|Raleway|Vidaloka">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+
+
+.card {
+margin: 25px;
+margin-left:13%;
+
+display: inline-block;
+position: relative;
+width: 220px;
+height: 260px;
+opacity: 0.85;
+}
+
+.front,
+.back {
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: -webkit-transform 300ms;
+transition: -webkit-transform 300ms;
+transition: transform 300ms;
+transition: transform 300ms, -webkit-transform 300ms;
+-webkit-transition-timing-function: linear;
+transition-timing-function: linear;
+border-radius: 5px;
+}
+
+.front {
+transform: rotateY(0deg);
+background: -webkit-linear-gradient(top left,#C97788,#D54329);//#D66D75,#E29587 #403B4A,#E7E9BB
+background: linear-gradient(to bottom right, #C97788,#D54329);
+text-align: center;
+padding: 30px;
+}
+
+.back {
+background: -webkit-linear-gradient(top left, #C68975,#D29997);
+background: linear-gradient(to bottom right, #C68975,#D29997);
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+padding: 40px 15px;
+color: #fff;
+}
+
+.card:hover .front {
+-webkit-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+//styling
+.front .contact {
+height: 120px;
+width: 120px;
+border: 5px solid #B2DBBF;
+border-radius: 50%;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.front .name {
+display: inline-block;
+font-size: 18px;
+color: #fff;
+}
+
+.front .job {
+color: #fff;
+}
+
+.front hr {
+border: none;
+color: #B2DBBF;
+border: 1px solid;
+}
+
+.back .icon {
+fill: currentColor;
+color: inherit;
+height: 33px;
+width: 33px;
+margin-top: 15px;
+color: white;
+}
+
+.back .icon:hover {
+cursor: pointer;
+color: #648767;
+}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("12.jpg");
+    height:720px;
+		margin-top:5px;
+		border-top-right-radius: 18px;
+		border-top-left-radius:18px;
+
+}
+
+.bgimg-1 h2{
+  font-family: 'Philosopher', sans-serif;
+  line-height:.8em;
+  padding-top: 15%;
+  color:#fff;
+}
+
+.bgimg-1 p{
+  font-family: "Raleway", sans-serif;
+  line-height:1.7em;
+  letter-spacing:1px;
+  padding-top: 3%;
+  color:#fff;
+  font-weight:bolder;
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+.demo-2{
+	padding-top:4%;
+}
+</style>
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button w3-wide">IMFA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+    
+      <a href="logout.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOG OUT</a>
+   
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+  <a href="#sol" onclick="w3_close()" class="w3-bar-item w3-button">LOG OUT</a>
+
+</nav>
+
+<div class="w3-container " style="padding:128px 16px; background-color:#ffF7F7;" id="techno">
+  <h3 class="w3-center">Welcome Admin</h3>
+  <p class="w3-center w3-large">&</p>
+
+<div class="techno">
+  <a href="karthikdesign/karthik made.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Insert payment information about members</span>
+        <hr>
+        <span class='job'><img src="dress.png"></span>
+      </div>
+      <div class='back'>
+
+        <p>click here to update information about members.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div>  </a>
+
+  <a href="viewmembers.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>View Members</span>
+        <hr>
+        <span class='job'><img src="commarce.png"></span>
+      </div>
+      <div class='back'>
+
+        <p>click on this to view members pay history,installements and many more.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div>  </a>
+
+  <a href="balancesheet.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>view Balance sheet</span>
+        <hr>
+        <span class='job'> <span class='job'><img src="watch.png"></span></span>
+      </div>
+      <div class='back'>
+        <span></span>
+        <p>Click on this to view the Annual balance sheet.</p>
+        <span> </span>
+        <div class='icons'>
+          </div>
+      </div>
+    </div><br/>  </a>
+
+  <a href="newprofit.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>View Profit and loss</span>
+        <hr>
+        <span class='job'><span class='job'><img src="cart1.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>Click on this to view profit and loss annually.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+  <a href="viewmonthly.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>view monthly list</span>
+        <hr>
+        <span class='job'> <span class='job'><img src="3d2.png"></span> </span>
+      </div>
+      <div class='back'>
+
+        <p>Click on this to view montly reports.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+  <a href="stylistics.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Create a new balance sheet,monthly list and members list.</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>click on this this to create new balance sheet or monthly list or member list</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+	
+	 <a href="stylistics.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Addition of new members.</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>Click on this to add a new member.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+	
+	 <a href="stylistics.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>View Requests.</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>click on this to view requests or complaints.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+	
+	 <a href="pending.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>View Pending Members.</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>click on this to view Pending Members who hadn't payed installment yet.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+	
+	<a href="stylistics.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>View False entries.</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>click on this to show information regarding any false entries.</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>view members</title>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		  <link rel="stylesheet" href="w3.css">
+		  </head>
+		  
+		  <style>
+		  
+		  
+		  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 100px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+.card {
+margin: 25px;
+margin-left:13%;
+
+display: inline-block;
+position: relative;
+width: 220px;
+height: 260px;
+opacity: 0.85;
+}
+
+.front,
+.back {
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: -webkit-transform 300ms;
+transition: -webkit-transform 300ms;
+transition: transform 300ms;
+transition: transform 300ms, -webkit-transform 300ms;
+-webkit-transition-timing-function: linear;
+transition-timing-function: linear;
+border-radius: 5px;
+}
+
+.front {
+transform: rotateY(0deg);
+background: -webkit-linear-gradient(top left,#C97788,#D54329);//#D66D75,#E29587 #403B4A,#E7E9BB
+background: linear-gradient(to bottom right, #C97788,#D54329);
+text-align: center;
+padding: 30px;
+}
+
+.back {
+background: -webkit-linear-gradient(top left, #C68975,#D29997);
+background: linear-gradient(to bottom right, #C68975,#D29997);
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+padding: 40px 15px;
+color: #fff;
+}
+
+.card:hover .front {
+-webkit-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+//styling
+.front .contact {
+height: 120px;
+width: 120px;
+border: 5px solid #B2DBBF;
+border-radius: 50%;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.front .name {
+display: inline-block;
+font-size: 18px;
+color: #fff;
+}
+
+.front .job {
+color: #fff;
+}
+
+.front hr {
+border: none;
+color: #B2DBBF;
+border: 1px solid;
+}
+
+.back .icon {
+fill: currentColor;
+color: inherit;
+height: 33px;
+width: 33px;
+margin-top: 15px;
+color: white;
+}
+
+.back .icon:hover {
+cursor: pointer;
+color: #648767;
+}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("12.jpg");
+    height:720px;
+		margin-top:5px;
+		border-top-right-radius: 18px;
+		border-top-left-radius:18px;
+
+}
+
+.bgimg-1 h2{
+  font-family: 'Philosopher', sans-serif;
+  line-height:.8em;
+  padding-top: 15%;
+  color:#fff;
+}
+
+.bgimg-1 p{
+  font-family: "Raleway", sans-serif;
+  line-height:1.7em;
+  letter-spacing:1px;
+  padding-top: 3%;
+  color:#fff;
+  font-weight:bolder;
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+.demo-2{
+	padding-top:4%;
+}
+</style>
+	
+	
+	
+	
+    <body>
+	
+	
+	<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button w3-wide">IMFA</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>LOGIN</a>
+      <a href="#techno" class="w3-bar-item w3-button"><i class="fa fa-th"></i>TOURS</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>CONTACT</a>
+      <a href="Blog.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>BLOG</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#sol" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="#techno" onclick="w3_close()" class="w3-bar-item w3-button">TOURS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+</nav>
+
+
+<table id="customers">
+  <tr>
+    <th>S.NO</th>
+    <th>Member Name</th>
+    <th>Account number</th>
+	<th>Email id</th>
+	<th>Contact number</th>
+	<th>Qualification</th>
+	<th>Address</th>
+	
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+
+</body>
+</html>

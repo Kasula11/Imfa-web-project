@@ -1,0 +1,108 @@
+<html class="gr__myaccount2_hireachbroadband_com"><head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://static2.hireachbroadband.com/templates/design1/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://static2.hireachbroadband.com/templates/design1/assets/skin/default_skin/css/base_util.css">
+<script type="text/javascript">
+var webroot = 'http://myaccount2.hireachbroadband.com/';
+</script>
+<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/vendor/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/assets/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/vendor/plugins/base_utils-min.js"></script><style type="text/css"></style>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+   <![endif]-->
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="external-page sb-l-c sb-r-c" data-gr-c-s-loaded="true">
+
+	<!-- Start: Main -->
+	<div id="main" class="animated fadeIn">
+
+		<!-- Start: Content-Wrapper -->
+		<section id="content_wrapper">
+
+			<!-- begin canvas animation bg -->
+			<div id="canvas-wrapper">
+				<canvas id="demo-canvas" width="797" height="588"></canvas>
+			</div>
+
+			<!-- Begin: Content -->
+			<section id="content">
+
+				<div class="admin-form theme-info" id="login1">
+
+					<div class="panel panel-info mt10 br-n">
+						 
+						<!-- end .form-header section -->
+					
+
+						<div class="panel-body bg-light p30">
+							<div class="">
+								 <img src="https://static2.hireachbroadband.com/templates/yourlogohere.png" height="40px" width="120px"> 							</div>
+							<hr>
+							<div class="row">
+								<div class="ccol-sm-12 ">
+
+									<div class="section row hidden"></div>
+
+									<div class="section">
+										<label for="username" class="field-label text-muted fs18 mb10">Username</label>
+										<label for="username" class="field prepend-icon"> <input type="text" name="unme" id="username" class="gui-input" placeholder="Enter username"> <label for="username" class="field-icon"><i class="fa fa-user"></i> </label> </label>
+									</div>
+									<!-- end section -->
+
+									<div class="section">
+										<label for="username" class="field-label text-muted fs18 mb10">Password
+										</label> <label for="password" class="field prepend-icon"> <input type="password" name="passd" id="password" class="gui-input" placeholder="Enter password"> <label for="password" class="field-icon"><i class="fa fa-lock"></i> </label> </label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end .form-body section -->
+						<div class="panel-footer clearfix p10 ph15">
+							<button type="submit" class="btn btn-sm btn-primary mr10 pull-right " id="logn_submt">Login</button>
+							<a href="" class="btn btn-sm btn-danger mr10 pull-left ">Forgot Password?</a>						</div>
+						<!-- end .form-footer section -->
+									</div>
+
+				</div>
+			</section>
+		</section>
+	</div>
+	<!-- Page Plugins -->
+	<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/assets/js/pages/login/EasePack.min.js"></script>
+	<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/assets/js/pages/login/rAF.js"></script>
+	<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/assets/js/pages/login/TweenLite.min.js"></script>
+	<script type="text/javascript" src="https://static2.hireachbroadband.com/templates/design1/assets/js/pages/login/login.js"></script>
+
+
+	<script type="text/javascript">
+        jQuery(document).ready(function() {
+            "use strict";
+            $( "#username" ).blur(function() {
+            	 $('#password').removeAttr('disabled');
+            	});
+          
+            $('#username').keypress(function(){
+                $('#password').removeAttr('disabled');
+                });
+            CanvasBG.init({
+                Loc: {
+                    x: window.innerWidth / 2,
+                    y: window.innerHeight / 3.3
+                }
+            });
+        });
+       
+    </script>
+
+
+
+</body></html>

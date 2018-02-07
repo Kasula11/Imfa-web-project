@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<title>HOME</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="icon" href="fevi.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher:700i|Oleo+Script|Raleway|Vidaloka">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- MAIN CARNASOL LINKS BEGAIN -->
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+		<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+	<!-- MAIN CARNASOL LINKS END -->
+<style>
+
+
+
+.card {
+margin: 25px;
+margin-left:13%;
+
+display: inline-block;
+position: relative;
+width: 220px;
+height: 260px;
+opacity: 0.85;
+}
+
+.front,
+.back {
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: -webkit-transform 300ms;
+transition: -webkit-transform 300ms;
+transition: transform 300ms;
+transition: transform 300ms, -webkit-transform 300ms;
+-webkit-transition-timing-function: linear;
+transition-timing-function: linear;
+border-radius: 5px;
+}
+
+.front {
+transform: rotateY(0deg);
+background: -webkit-linear-gradient(top left,#C97788,#D54329);//#D66D75,#E29587 #403B4A,#E7E9BB
+background: linear-gradient(to bottom right, #C97788,#D54329);
+text-align: center;
+padding: 30px;
+}
+
+.back {
+background: -webkit-linear-gradient(top left, #C68975,#D29997);
+background: linear-gradient(to bottom right, #C68975,#D29997);
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+padding: 40px 15px;
+color: #fff;
+}
+
+.card:hover .front {
+-webkit-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+//styling
+.front .contact {
+height: 120px;
+width: 120px;
+border: 5px solid #B2DBBF;
+border-radius: 50%;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.front .name {
+display: inline-block;
+font-size: 18px;
+color: #fff;
+}
+
+.front .job {
+color: #fff;
+}
+
+.front hr {
+border: none;
+color: #B2DBBF;
+border: 1px solid;
+}
+
+.back .icon {
+fill: currentColor;
+color: inherit;
+height: 33px;
+width: 33px;
+margin-top: 15px;
+color: white;
+}
+
+.back .icon:hover {
+cursor: pointer;
+color: #648767;
+}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("12.jpg");
+    height:720px;
+		margin-top:5px;
+		border-top-right-radius: 18px;
+		border-top-left-radius:18px;
+
+}
+
+.bgimg-1 h2{
+  font-family: 'Philosopher', sans-serif;
+  line-height:.8em;
+  padding-top: 15%;
+  color:#fff;
+}
+
+.bgimg-1 p{
+  font-family: "Raleway", sans-serif;
+  line-height:1.7em;
+  letter-spacing:1px;
+  padding-top: 3%;
+  color:#fff;
+  font-weight:bolder;
+}
+
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+.demo-2{
+	padding-top:4%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    <a href="home.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#sol" class="w3-bar-item w3-button"><i class="fa fa-user"></i>SOLUTIONS</a>
+      <a href="#techno" class="w3-bar-item w3-button"><i class="fa fa-th"></i>TECHNOLOGIES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>CONTACT</a>
+      <a href="Blog.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>BLOG</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#sol" onclick="w3_close()" class="w3-bar-item w3-button">SOLUTIONS</a>
+  <a href="#techno" onclick="w3_close()" class="w3-bar-item w3-button">TECHNOLOGIES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+</nav>
+
+
+
+<!--  MAIN CARNASOL         -->
+        <div class="container demo-2">
+
+
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<h2>The Brand</h2>
+							<blockquote><p>“Great brand experiences come from compelling content + seamlessly integrated tech</p><cite>Ralph Waldo Emerson</cite></blockquote>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<h2>The Fashion</h2>
+							<blockquote><p>“Customization is one of the strongest growth areas for any Fashion Product</p><cite>Grant Barth of @LEVIS</cite></blockquote>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<h2>The Tech</h2>
+							<blockquote><p>For customization you must get the mix right between quality,convenience and tech experience</p><cite>Aubriepagano of @bowanddrape</cite></blockquote>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-4"></div>
+							<h2>Tech & Fashion</h2>
+							<blockquote><p>The new creative platform is in the product itself.Technology is the new platform for Fashion.</p><cite>Tim Rodgers of @Rehab Studio</cite></blockquote>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-5"></div>
+							<h2>We Here</h2>
+							<blockquote><p>Building a Bridge Between Fashion & Technology</p><cite> </cite></blockquote>
+
+              	</div>
+
+					</div>
+
+				</div><!-- /sl-slider -->
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+<!-- Section with gackground    (about)     -->
+       <div class="bgimg-1 " id="about">
+              <h2 class="w3-jumbo w3-center w3-text-white">What We Do?</h2>
+              <h3 class="w3-center w3-xxlarge w3-animate-fading"><b>We are on the cutting edge of fashion & technology</b></h2>
+              <p class="w3-center w3-xlarge">Virtual and interactive events, retail,mobile commerce solutions, and wearable technology.<br/>
+ We apply the latest technologies to fashion to help brands better communicate with their customers.<br/>
+ Our technologies easily integrate into a brands traditional marketing materials:
+ print, retail, <br/>events, social media, and clothing. Our solutions inspire brand loyalty and lead to sales.<br/>
+we develop create and manage your apps select from the wide range of technologies avaliable.  </p>
+         </div>
+         <!-- Section with gackground    (about)    End -->
+
+
+
+
+
+
+
+
+<!-- Solut Section -->
+<div class="w3-container" style="padding:128px 16px" id="sol">
+  <h3 class="w3-center">SOLUTIONS</h3>
+  <p class="w3-center w3-large">Tailor made tech services, cut for your needs</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-bullhorn w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Increase Awareness</p>
+      <p>Get your brand’s message through all of your clients devices.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-shopping-bag w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Increase Sales</p>
+      <p>Meet your customers wherever they are, and trigger the purchase.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cubes w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Increase Intractivity</p>
+      <p>Create a unique brand experience using interactive technologies.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bolt w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Hybrid Delivery</p>
+      <p>Deliver products and get immidiate feedback at lightining speed</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container " style="padding:128px 16px; background-color:#ffF7F7;" id="techno">
+  <h3 class="w3-center">Technologies</h3>
+  <p class="w3-center w3-large">A large panel of cutting edge technologies and services</p>
+
+<div class="techno">
+  <a href="virtualbot.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Virtual Boutique</span>
+        <hr>
+        <span class='job'><img src="dress.png"></span>
+      </div>
+      <div class='back'>
+
+        <p>Turn any surface into a point of sale</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div>  </a>
+
+  <a href="virtuialretail.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Virtual Retail</span>
+        <hr>
+        <span class='job'><img src="commarce.png"></span>
+      </div>
+      <div class='back'>
+
+        <p>Or VR enables you to intract with custmoers with ease</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div>  </a>
+
+  <a href="werable.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Werable Fashion</span>
+        <hr>
+        <span class='job'> <span class='job'><img src="watch.png"></span></span>
+      </div>
+      <div class='back'>
+        <span></span>
+        <p>We tie up with big gaints to make your dreams come true</p>
+        <span> </span>
+        <div class='icons'>
+          </div>
+      </div>
+    </div><br/>  </a>
+
+  <a href="outfitapp.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>eCommerce Outfit</span>
+        <hr>
+        <span class='job'><span class='job'><img src="cart1.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>Create Custom Apps for your needs</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+  <a href="3dtech.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>3D Printing</span>
+        <hr>
+        <span class='job'> <span class='job'><img src="3d2.png"></span> </span>
+      </div>
+      <div class='back'>
+
+        <p>3D printing solutions for design use it for your needs</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+  <a href="stylistics.html">  <div class='card'>
+      <div class='front'>
+        <span class='name'>Stylistics</span>
+        <hr>
+        <span class='job'><span class='job'><img src="people.png"></span></span>
+      </div>
+      <div class='back'>
+
+        <p>The Combination of Fashion and Statits</p>
+
+        <div class='icons'>
+          </div>
+      </div>
+    </div> </a>
+
+</div>
+
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chandigarh</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone:123456789</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="view.jsp" method="post" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+<a href="loginadmin.jsp"><button class="w3-button" >Admin_Login</button></a>
+</footer>
+
+
+
+
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">
+
+
+
+
+
+
+		/*   MAIN CARNASOL  */
+			$(function() {
+
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+
+								$( this ).on( 'click', function( event ) {
+
+									var $dot = $( this );
+
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+
+									}
+
+									slitslider.jump( i + 1 );
+									return false;
+
+								} );
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+			           /*   MAIN CARNASOL  */
+			});
+
+
+		</script>
+
+
+
+
+
+
+
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(30.769592, 76.575939);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
